@@ -63,21 +63,21 @@ target_compile_options(openthread-radio PRIVATE
 
 set(COMMON_INCLUDES
     ${PROJECT_SOURCE_DIR}/src/core
-    /home/dafran/test/modules/lib/openthread/third_party/paho/paho/MQTTSNPacket/src
+    ${PROJECT_SOURCE_DIR}/third_party/paho/paho/MQTTSNPacket/src
 )
 
 set(COMMON_SOURCES
-    /home/dafran/test/modules/lib/openthread/third_party/paho/paho/MQTTSNPacket/src/MQTTSNConnectClient.c
-    /home/dafran/test/modules/lib/openthread/third_party/paho/paho/MQTTSNPacket/src/MQTTSNConnectServer.c
-    /home/dafran/test/modules/lib/openthread/third_party/paho/paho/MQTTSNPacket/src/MQTTSNDeserializePublish.c
-    /home/dafran/test/modules/lib/openthread/third_party/paho/paho/MQTTSNPacket/src/MQTTSNPacket.c
-    /home/dafran/test/modules/lib/openthread/third_party/paho/paho/MQTTSNPacket/src/MQTTSNSearchClient.c
-    /home/dafran/test/modules/lib/openthread/third_party/paho/paho/MQTTSNPacket/src/MQTTSNSearchServer.c
-    /home/dafran/test/modules/lib/openthread/third_party/paho/paho/MQTTSNPacket/src/MQTTSNSerializePublish.c
-    /home/dafran/test/modules/lib/openthread/third_party/paho/paho/MQTTSNPacket/src/MQTTSNSubscribeClient.c
-    /home/dafran/test/modules/lib/openthread/third_party/paho/paho/MQTTSNPacket/src/MQTTSNSubscribeServer.c
-    /home/dafran/test/modules/lib/openthread/third_party/paho/paho/MQTTSNPacket/src/MQTTSNUnsubscribeClient.c
-    /home/dafran/test/modules/lib/openthread/third_party/paho/paho/MQTTSNPacket/src/MQTTSNUnsubscribeServer.c
+    ${PROJECT_SOURCE_DIR}/third_party/paho/paho/MQTTSNPacket/src/MQTTSNConnectClient.c
+    ${PROJECT_SOURCE_DIR}/third_party/paho/paho/MQTTSNPacket/src/MQTTSNConnectServer.c
+    ${PROJECT_SOURCE_DIR}/third_party/paho/paho/MQTTSNPacket/src/MQTTSNDeserializePublish.c
+    ${PROJECT_SOURCE_DIR}/third_party/paho/paho/MQTTSNPacket/src/MQTTSNPacket.c
+    ${PROJECT_SOURCE_DIR}/third_party/paho/paho/MQTTSNPacket/src/MQTTSNSearchClient.c
+    ${PROJECT_SOURCE_DIR}/third_party/paho/paho/MQTTSNPacket/src/MQTTSNSearchServer.c
+    ${PROJECT_SOURCE_DIR}/third_party/paho/paho/MQTTSNPacket/src/MQTTSNSerializePublish.c
+    ${PROJECT_SOURCE_DIR}/third_party/paho/paho/MQTTSNPacket/src/MQTTSNSubscribeClient.c
+    ${PROJECT_SOURCE_DIR}/third_party/paho/paho/MQTTSNPacket/src/MQTTSNSubscribeServer.c
+    ${PROJECT_SOURCE_DIR}/third_party/paho/paho/MQTTSNPacket/src/MQTTSNUnsubscribeClient.c
+    ${PROJECT_SOURCE_DIR}/third_party/paho/paho/MQTTSNPacket/src/MQTTSNUnsubscribeServer.c
     api/backbone_router_api.cpp
     api/backbone_router_ftd_api.cpp
     api/border_router_api.cpp
